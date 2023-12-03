@@ -5,9 +5,9 @@ import org.springframework.data.mongodb.core.mapping.Document
 
 @Document("catalog")
 data class CatalogDocument(
-    val code: String,
-    val name: String,
+    var code: String,
+    var name: String,
 ) {
     @Id
-    val id: String = ""
+    var id: String? = null
 }
