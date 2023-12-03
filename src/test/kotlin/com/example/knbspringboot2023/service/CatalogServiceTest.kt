@@ -19,7 +19,7 @@ class CatalogServiceTest {
 
         every { catalogRepository.findAll() } returns emptyList()
 
-        val listAllCatalog = catalogService.ListAllCatalog()
+        val listAllCatalog = catalogService.listAllCatalog()
 
         Assertions.assertEquals(listAllCatalog.size, 0)
     }
@@ -32,7 +32,7 @@ class CatalogServiceTest {
             CatalogDocument("c1", "n1"),
         )
 
-        val listAllCatalog = catalogService.ListAllCatalog()
+        val listAllCatalog = catalogService.listAllCatalog()
 
         Assertions.assertEquals(listAllCatalog.size, 2)
     }

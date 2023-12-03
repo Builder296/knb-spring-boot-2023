@@ -13,7 +13,7 @@ class CatalogController(
 ) {
 
     @GetMapping("")
-    fun ListCatalogAll(): List<Catalog> {
-        return catalogService.ListAllCatalog()
+    fun listCatalogAll(): List<Catalog> {
+        return catalogService.listAllCatalog()
     }
 }

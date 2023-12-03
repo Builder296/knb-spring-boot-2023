@@ -9,7 +9,7 @@ class CatalogService(
     val catalogRepository: CatalogRepository
 ) {
 
-    fun ListAllCatalog(): List<Catalog> {
+    fun listAllCatalog(): List<Catalog> {
         return catalogRepository.findAll().map { Catalog(
             it.code,
             it.name,
